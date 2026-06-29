@@ -1,6 +1,6 @@
 import mysql.connector
 import streamlit as st
-
+st.set_page_config(page_title="Local Grocery Booking", layout="wide")
 
 # Secure database connection setup
 def get_db_connection():
@@ -30,7 +30,7 @@ def fetch_inventory():
 
 
 # --- Web Layout Design ---
-st.set_page_config(page_title="Local Grocery Booking", layout="wide")
+
 st.title("🛒 Local General Store Grocery Booking Portal")
 st.markdown("Book your daily essentials online and pick them up at the counter!")
 
